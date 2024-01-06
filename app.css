@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serifs;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+  margin: 0;
+}
+nav {
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+.top-left-nav {
+  align-self: flex-start;
+  padding: 15px 60px 15px 30px;
+}
+.top-right-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  padding: 15px 60px 15px 30px;
+}
+.top-left-h3 {
+  cursor: pointer;
+  font-weight: 800;
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.top-right-nav a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.top-right-nav,
+a:hover {
+  color: #147efb;
+  transition: all 0s;
+}
+.container {
+  height: 100%;
+  background-color: #f9f9f9;
+}
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.section-1 {
+  height: 100%;
+  margin-top: 9rem;
+  margin-left: 14rem;
+  margin-right: 14rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-text,
+h1 {
+  font-weight: 700;
+  color: #2d2e32;
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+.section-1-left-p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  color: #6a6c6a;
+}
+.nepal {
+  height: 1rem;
+  width: 1rem;
+}
+.fa-linkedin {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+.fa-github {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  font-size: 1.6rem;
+}
+.fa-linkedin:hover,
+.fa-github:hover {
+  cursor: pointer;
+  color: #147efb;
+  transition: all 0s;
+}
+.section-1-bottom {
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section-1-bottom-h2,
+h2 {
+  font-weight: bold;
+}
+.section-1-bottom-img {
+  margin-left: 2.5rem;
+}
+.section-1-bottom-img:hover {
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  transform: translateY(-12px);
+}
+.border {
+  height: 20rem;
+  width: 20rem;
+  border: black solid 3px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: animi 8s linear infinite;
+}
+
+@keyframes animi {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  50% {
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+  }
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
